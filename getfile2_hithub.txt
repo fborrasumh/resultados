@@ -1,0 +1,1 @@
+--load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=FILEID' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\n/p')&id=1ZwL8HfYJpzNVfd2yriSmaq_mfW4IOelb" -O data.xlsx && rm -rf /tmp/cookies.txt
